@@ -1,0 +1,381 @@
+<html>  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-devoice-width,initial-scale=1.0">
+    <meta http-equiv="X-LM-Compatible"content="ie=edge">
+    
+<title> Counter using HTML </title>  
+  
+<!-- Add bootstrap cdn code link to the code -->  
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+  
+<!-- Add awesome font CSS link to the code -->  
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+  
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>  
+  
+<style>  
+    * {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+    }
+    
+     body {  
+   
+         
+        font-family: Arial;
+  color: white; 
+         
+         
+     }  
+    .split {
+  height: 100%;
+ --left-width: 20%;
+     width:80%;   
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #6a5acd;
+}
+
+.right {
+  right: 0;
+  background-color: mediumaquamarine;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+    
+    
+     .counter-section {  
+    margin: 10% auto;  
+    color: lightblue;  
+     }  
+     .row {  
+    margin: 5px;  
+     }  
+     .col-md-3 {   
+    width: 5%;   
+    padding: 4px;  
+     }   
+  
+     /* provide styling to icons */  
+     .fa {   
+    float: left;  
+    font-size: 10px;   
+    padding: 8px;   
+    border: 1px solid #fff;  
+     }   
+  
+    
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px;
+ font-size: 10px;
+  background-color: #FFD700;
+  color: black;
+}
+
+.fa {font-size:25px;
+    background-color: white;}
+    
+    body {
+    margin: 0;
+    height: 50vh;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    --c: black;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+nav ul li:hover {
+    color: black;
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+
+  .mybtn-right{
+	text-align: right;
+}
+
+</style>  
+  
+<body> 
+   
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    <div class="split left">
+ 
+    
+    <div class="container">
+    
+        
+<div class="container counter-section">  
+<div class="row">  
+<div class="col-md-3">  
+<i class="fa fa-briefcase"> </i>  
+<h4 class="counter"> 175 </h4>  
+<p> Projects Completed </p>  
+</div>  
+</div>  
+  
+<div class="row">  
+<div class="col-md-3">  
+<i class="fa fa-users"> </i>  
+<h4 class="counter"> 520 </h4>  
+<p> Users Connected </p>  
+</div>  
+</div>  
+  
+  
+<div class="row">  
+<div class="col-md-3">  
+<i class="fa fa-coffee"> </i>  
+<h4 class="counter"> 150 </h4>  
+<p> Meetings </p>  
+</div>  
+</div>  
+  
+<div class="row">  
+<div class="col-md-3">  
+<i class="fa fa-trophy"> </i>  
+<h4 class="counter"> 319 </h4>  
+<p> Global Achievement </p>  
+</div>  
+</div>  
+  
+</div>  
+  
+
+      </div></div>
+    
+  
+  
+     <div class="split right">
+   
+ <h1>Select Campaign</h1>
+ 
+<form>
+<label> Select Cars </label>
+<select>
+<option value = "BMW"> BMW 
+</option>
+<option value = "Mercedes"> Mercedes 
+</option>
+<option value = "Audi"> Audi
+</option>
+<option value = "Skoda"> Skoda
+</option>
+</select>
+</form>
+         
+          <div class="w3-container">
+         
+        <div class="w3-panel w3-pale-yellow">
+  
+<h2>Goal:$1000</h2>
+  <p1>$1000:</p1>
+            
+       <p2>$700 raised</p2>
+
+    <div class="w3-light-grey w3-tiny">
+        <div class="w3-container w3-green" style="width:70%">70%</div>
+
+    
+ 
+</div>
+<div class="mybtn-right">
+    
+   <button type="button" >
+    
+  <nav>
+  <ul>
+    <li>
+      Goto Fundraisers
+  
+    </li>
+    <li>
+      Edit Fundraisers
+     
+    </li>
+      </ul>
+
+       </nav></button>
+         </div>
+         </div>    </div> 
+ <div class="row">
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-user"></i></p>
+      <h3>11+</h3>
+      <p>Partners</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-check"></i></p>
+      <h3>55+</h3>
+      <p>Projects</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-smile-o"></i></p>
+      <h3>100+</h3>
+      <p>Happy Clients</p>
+    </div>
+  </div>
+          
+         
+         </div></div>
+         
+         
+      <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  
+   
+         
+        
+ <script src="jquery.counterup.min.js"></script>  
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>  
+<script>  
+jQuery(document).ready(function( $ )  
+{  
+    $('.counter').counterUp({  
+        delay: 10,  
+    time: 1000  
+    });  
+});  
+</script> 
+        
+
+</body>
+</html>
